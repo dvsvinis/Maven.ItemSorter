@@ -1,5 +1,7 @@
 package rocks.zipcode.io;
 
+import com.sun.tools.javac.jvm.Items;
+
 /**
  * @author leon on 30/01/2019.
  */
@@ -44,4 +46,16 @@ public class Item {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
+
+
 }
